@@ -13,8 +13,9 @@
   <body>
     <script type="text/javascript" src="./main.js"></script>
     <form
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      onsubmit="onSubmit()"
     >
       <fieldset>
         <legend>Personal information</legend>
@@ -29,12 +30,12 @@
         <label class="form-field">
           How old are you?
           <input
-          type="number"
-          name="age"
-          min="12"
-          max="100"
-          value="12"
-        >
+            type="number"
+            name="age"
+            min="12"
+            max="100"
+            value="12"
+          >
         </label>
         <label class="form-field">
           Full date of birth:
@@ -50,13 +51,21 @@
         <legend>Registration</legend>
         <label class="form-field">
           E-mail:
-          <input type="email" name="email"
-          required placeholder="email@example.com">
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="email@example.com"
+          >
         </label>
         <label class="form-field">
           Password:
-          <input type="password" name="password"
-          required minlength="8" maxlength="32">
+          <input
+            type="password"
+            name="password"
+            required minlength="8"
+            maxlength="32"
+          >
         </label>
       </fieldset>
 
@@ -64,9 +73,17 @@
         <legend>An interesting fact about you!</legend>
         <label class="form-field">
           Do you love cats?
-          <input type="radio" name="cats" value="y">
+          <input
+          type="radio"
+          name="cats"
+          value="y"
+          >
             Yes
-          <input type="radio" name="cats" value="n">
+          <input
+          type="radio"
+          name="cats"
+          value="n"
+          >
             No
         </label>
         <label class="form-field">
@@ -105,8 +122,6 @@
           </select>
         </label>
       </fieldset>
-    </form>
-    <form onsubmit="onSubmit()">
       <label>
         <input type="submit" value="Submit">
       </label>
