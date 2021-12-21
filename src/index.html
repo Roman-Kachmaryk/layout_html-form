@@ -71,21 +71,31 @@
 
       <fieldset>
         <legend>An interesting fact about you!</legend>
-        <label class="form-field">
+        <label>
           Do you love cats?
+        </label>
+        <span class="special">
           <input
           type="radio"
           name="cats"
           value="y"
-          >
+          id="y"
+        >
+          <label for="y">
             Yes
+          </label>
+        </span>
+        <span>
           <input
           type="radio"
           name="cats"
           value="n"
-          >
+          id="n"
+        >
+          <label for="n">
             No
-        </label>
+          </label>
+        </span>
         <label class="form-field">
           What is your favorite color?
           <input type="color" name="color">
@@ -95,7 +105,7 @@
           <input type="time" name="time">
         </label>
         <label class="form-field">
-          What are your favorite brands of cars?
+          What are your favorite brand of cars?
           <select name="cars" multiple>
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
@@ -123,7 +133,7 @@
         </label>
       </fieldset>
       <label>
-        <input type="submit" value="Submit">
+        <button type="submit">Submit</button>
       </label>
     </form>
   </body>

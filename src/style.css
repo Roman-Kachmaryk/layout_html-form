@@ -11,3 +11,7 @@ fieldset {
 label {
   margin-bottom: 10px;
 }
+
+.special {
+  line-height: 30px;
+}
